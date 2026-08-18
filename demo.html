@@ -1,0 +1,62 @@
+<html>
+  <h1>Hellow guys</h1>
+ <form action="/submit-form-endpoint" method="POST">
+  <!-- Text Input -->
+  <div>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required />
+  </div>
+
+  <!-- Email Input -->
+  <div>
+    <label for="userEmail">Email Address:</label>
+    <input type="email" id="userEmail" name="userEmail" placeholder="name@example.com" required />
+  </div>
+
+  <!-- Password Input -->
+  <div>
+    <label for="userPassword">Password:</label>
+    <input type="password" id="userPassword" name="userPassword" required />
+  </div>
+
+  <!-- Dropdown Select Menu -->
+  <div>
+    <label for="subject">Reason for Contact:</label>
+    <select id="subject" name="subject">
+      <option value="support">Technical Support</option>
+      <option value="sales">Sales Inquiry</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <!-- Multi-line Text Area -->
+  <div>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+  </div>
+
+  <!-- Radio Buttons (Choose One) -->
+  <div>
+    <p>Preferred Contact Method:</p>
+    <label>
+      <input type="radio" name="contactMethod" value="email" checked /> Email
+    </label>
+    <label>
+      <input type="radio" name="contactMethod" value="phone" /> Phone
+    </label>
+  </div>
+
+  <!-- Checkbox (Choose Multiple/Consent) -->
+  <div>
+    <label>
+      <input type="checkbox" name="subscribe" value="yes" /> Subscribe to newsletter
+    </label>
+  </div>
+
+  <!-- Submit Button -->
+  <div>
+    <button type="submit">Submit Form</button>
+  </div>
+</form>
+</html>
+
